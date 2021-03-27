@@ -1,0 +1,14 @@
+<% include partials/_header %>
+<div class="ml-5">
+    <div class="container mt-5"><h1>Logro matricularse</h1></div>
+    <h3>Usted selecciono:</h3>
+    <%if(cod) { %>
+        <h5><%= cod %></h5>
+    <% } %>
+    <% if (data) { %>
+        <% for(var i = 0; i < data.length; i++) { %>
+            <h5><li><%=  cur[i] %> ---> <%=  data[i] %></li></h5>
+        <% } %>
+    <% } %>
+</div>
+<% include partials/_footer %>
